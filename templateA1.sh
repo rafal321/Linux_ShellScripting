@@ -117,11 +117,6 @@ echo $(expr $num1 + $num2 )
 echo $(expr $num1 \* $num2)
 
 #---- operations on decimals -------
-
-
-
-############################
-# 01:46:06 12 - The case statement
 #we have to use BC
 # see: man BC
 num1=20.5
@@ -139,7 +134,22 @@ echo "$num1+$num2" | bc
 # square root
 num=27
 echo "scale=2;sqrt($num)" | bc -l
-#-l is calling liblary of functions
+#-l is calling liblary of functions.
 #power
 echo "scale=2;3^3" | bc -l
 
+
+############################
+# 01:46:06 12 - The case statement
+#$1 value taken from console
+vechicle=$1
+case $vechicle in
+        "car" )
+                echo "Rent of $vechicle is 100$" ;;
+        [vV][aA][nN])
+                echo "Rent of $vechicle is 150$" ;;
+        "bike" )
+                echo "Rent of $vechicle is 15$" ;;
+        * )
+                echo "Unknown vechicle" ;;
+esac
