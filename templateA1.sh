@@ -102,3 +102,44 @@ if [ "${age}" -gt 18 ] && [ "${age}" -lt 30 ]; then
 else
         echo "age not valid"
 fi
+
+#or operator:] || [,  -o,  [[ || ]] 
+
+######################################
+# 1:26:35 10 - Perform arithmetic operations
+num1=20
+num2=5
+
+echo $(( num1 + num2 ))
+#expr comand
+echo $(expr $num1 + $num2 )
+#only for multiplication use
+echo $(expr $num1 \* $num2)
+
+#---- operations on decimals -------
+
+
+
+############################
+# 01:46:06 12 - The case statement
+#we have to use BC
+# see: man BC
+num1=20.5
+num2=5.1
+
+echo "20.5+5" | bc
+echo "20.5-5" | bc
+echo "20.5*5" | bc
+echo "scale=2;20.5/5" | bc
+echo "20.5%5" | bc
+#scale is used with division
+# two decimal points
+
+echo "$num1+$num2" | bc
+# square root
+num=27
+echo "scale=2;sqrt($num)" | bc -l
+#-l is calling liblary of functions
+#power
+echo "scale=2;3^3" | bc -l
+
