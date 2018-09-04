@@ -166,3 +166,20 @@ echo "${!os[@]}" #prints indexes
 echo "${#os[@]}" #print lenght
 unset os[2] #remove 
 #gaps in array are ok
+############################
+#02:12:51 15 - WHILE Loops
+counter=1
+for x in ${os[*]}
+do
+        echo "$counter) $x."
+        #((counter++))  arithmetic expansion
+        let "counter++"
+done
+
+n=1
+#while (( $n <= 10 ))
+while [ "$n" -le 4 ]; do
+        echo "$n"
+        n=$(( n+1 ))
+        sleep 0.5
+done
