@@ -155,4 +155,14 @@ case $vechicle in
 esac
 
 ############################
-# 01:46:06 12 - The case statement
+# 02:02:26 14 - Array variables
+
+os=('ubuntu' 'windows' 'kali')
+
+echo "${os[@]}"
+echo "${os[1]}"
+echo[3]='mac' #add to array
+echo "${!os[@]}" #prints indexes
+echo "${#os[@]}" #print lenght
+unset os[2] #remove 
+#gaps in array are ok
