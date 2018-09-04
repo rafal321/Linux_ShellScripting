@@ -153,3 +153,6 @@ case $vechicle in
         * )
                 echo "Unknown vechicle" ;;
 esac
+
+############################
+# 01:46:06 12 - The case statement
