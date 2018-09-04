@@ -180,6 +180,9 @@ n=1
 #while (( $n <= 10 ))
 while [ "$n" -le 4 ]; do
         echo "$n"
-        n=$(( n+1 ))
+        n=$(( n+1 )) #$(( n++ ))
         sleep 0.5
+        gmome-terminal & # it opens terminal
 done
+############################
+#02:23:59 17 - Read a file content in Bash
