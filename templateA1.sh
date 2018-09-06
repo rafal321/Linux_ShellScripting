@@ -228,21 +228,34 @@ for VARIABLE in $(Linux command here)
 for VARIABLE in (( EXP1, EXP2, EXP3 ))
 
 #for i in 1 2 3 4 5
-#for i in {1...10}
-for i in {1..10..2} #increment by 2
-do
+#for i in {1..10}
+for i in {1..10..2}; do #increment by 2
         echo $i
 done
 
 for (( i=0; i<5; i++ )); do
         echo ">> $i"
 done
+###########################
+# 02:44:08 20 - use FOR loop to execute commands
+
+for command in ls pwd date
+do
+        echo "---$command---"
+        $command
+done
+
+# * iterate over every file/dir in current dir
+# and print if directories only
+for i in *
+do
+        if [ -d $i ]
+        then
+        echo $i
+done
 
 
 
-
-
-02:44:08 20 - use FOR loop to execute commands
 02:50:44 21 - Select loop
 02:57:41 22 - Break and continue
 03:04:11 23 - Functions
