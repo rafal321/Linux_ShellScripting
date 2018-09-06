@@ -188,7 +188,7 @@ done
 #02:23:59 17 - Read a file content in Bash
 #there ate several ways to do it
 # 1]
-#p is variable where you save the content
+#p is variable where you save the content (can be anything)
 while read p
 do
         echo $p
@@ -200,3 +200,12 @@ do
 done
 #if special caracters above methods is cosing problems
 # 3]
+# IFS - internal field separator
+#-r prevents \ from being interpreted
+#after IFS it is empty space or IFS=' ' 
+while IFS= read -r p
+do 
+        echo $line
+done < /etc/passwd
+
+
