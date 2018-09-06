@@ -208,4 +208,33 @@ do
         echo $line
 done < /etc/passwd
 
+#######################
+# 02:31:15 18 - UNTIL loop
+# if condition is false then it is executed
+# oposite to while
+n=1
+# or until (( $n > 10 ))
+until [ $n -ge 10 ]; do
+        echo $n
+        n=$(( n+1 ))
+done
+
+
+
+
+02:35:38 19 - FOR loop
+02:44:08 20 - use FOR loop to execute commands
+02:50:44 21 - Select loop
+02:57:41 22 - Break and continue
+03:04:11 23 - Functions
+03:13:48 24 - Local variables
+03:22:09 25 - Function Example
+03:34:16 26 - Readonly command
+03:41:34 27 - Signals and Traps
+04:03:08 28 - How to debug a bash script﻿
+
+
+
+
+
 
