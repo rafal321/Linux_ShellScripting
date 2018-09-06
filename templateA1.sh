@@ -249,11 +249,13 @@ done
 # and print if directories only
 for i in *
 do
-        if [ -d $i ]
+        if [ -d $i ] #if [ -f $i ] for files only
         then
         echo $i
 done
 
+###################
+# 02:50:44 21 - Select loop
 
 
 02:50:44 21 - Select loop
