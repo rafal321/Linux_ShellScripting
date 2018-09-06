@@ -186,3 +186,17 @@ while [ "$n" -le 4 ]; do
 done
 ############################
 #02:23:59 17 - Read a file content in Bash
+#there ate several ways to do it
+# 1]
+#p is variable where you save the content
+while read p
+do
+        echo $p
+done < hello.txt
+# 2]
+cat hello.txt | while read p
+do
+        echo $p
+done
+#if special caracters above methods is cosing problems
+# 3]
