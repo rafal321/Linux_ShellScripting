@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #https://www.youtube.com/watch?v=zWVV31NYi1U
+#git: https://www.youtube.com/watch?v=9cMWR-EGFuY&t=274s
 
 echo "Hi there"
 # ==== read user input ====
@@ -256,6 +257,28 @@ done
 
 ###################
 # 02:50:44 21 - Select loop
+
+#used when menu is needed
+# used with case
+select name1 in mark john james; do
+        echo ">> $name1 selected"
+done
+
+# here we can implement complex logic based on select loop:
+select name2 in bob alex elen; do
+        case $name2 in
+                bob )
+                        echo "mark selected" ;;
+                alex )
+                        echo "alex selected" ;;
+                elen )
+                        echo "elen selected" ;;
+                *)
+                        echo "select btwn 1..4"
+        esac
+done
+
+
 
 
 02:50:44 21 - Select loop
