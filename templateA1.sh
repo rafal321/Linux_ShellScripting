@@ -219,10 +219,29 @@ until [ $n -ge 10 ]; do
         n=$(( n+1 ))
 done
 
+#######################
+# 02:35:38 19 - FOR loop
+
+for VARIABLE in 123456 .. N
+for VARIABLE in file1 file2
+for VARIABLE in $(Linux command here)
+for VARIABLE in (( EXP1, EXP2, EXP3 ))
+
+#for i in 1 2 3 4 5
+#for i in {1...10}
+for i in {1..10..2} #increment by 2
+do
+        echo $i
+done
+
+for (( i=0; i<5; i++ )); do
+        echo ">> $i"
+done
 
 
 
-02:35:38 19 - FOR loop
+
+
 02:44:08 20 - use FOR loop to execute commands
 02:50:44 21 - Select loop
 02:57:41 22 - Break and continue
