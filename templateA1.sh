@@ -287,7 +287,14 @@ for (( i=1; i<=10; i++ )); do
         echo "$i"
 done
 
-
+# -o or operator
+# anything after continue will be skipped
+for (( i=1; i<=10; i++ )); do
+        if [ "$i" -eq 3 -o "$i" -eq 6 ]; then
+                continue
+        fi
+        echo ">> $i"
+done
 
 
 
