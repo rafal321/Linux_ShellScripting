@@ -277,12 +277,22 @@ select name2 in bob alex elen; do
                         echo "select btwn 1..4"
         esac
 done
+##############################
+# 02:57:41 22 - Break and continue
+
+for (( i=1; i<=10; i++ )); do
+        if [ "$i" -gt 8 ]; then
+                break
+        fi
+        echo "$i"
+done
 
 
 
 
-02:50:44 21 - Select loop
-02:57:41 22 - Break and continue
+
+
+
 03:04:11 23 - Functions
 03:13:48 24 - Local variables
 03:22:09 25 - Function Example
