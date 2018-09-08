@@ -315,11 +315,23 @@ function print(){
 print bobo abab cece
 print Hello
 
+########################
+# 03:13:48 24 - Local variables
+#all variables are global unless 
+#local keyword is used
+
+function print(){
+        local name=$1
+        echo "the name is $name"
+}
+name="Tom"
+echo "The name is $name : Before"
+print Max
+echo "The name is $name : After"
 
 
 
 
-03:13:48 24 - Local variables
 03:22:09 25 - Function Example
 03:34:16 26 - Readonly command
 03:41:34 27 - Signals and Traps
