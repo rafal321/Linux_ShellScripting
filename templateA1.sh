@@ -296,11 +296,29 @@ for (( i=1; i<=10; i++ )); do
         echo ">> $i"
 done
 
+##########################
+# 03:04:11 23 - Functions
+
+# you can skip function word
+
+function hello(){
+echo "hi there"
+}
+hello
+exit #exits script
+hello
+
+# $1 means 1st argument etc
+function print(){
+        echo $1 "xx" $2 $3
+}
+print bobo abab cece
+print Hello
 
 
 
 
-03:04:11 23 - Functions
+
 03:13:48 24 - Local variables
 03:22:09 25 - Function Example
 03:34:16 26 - Readonly command
