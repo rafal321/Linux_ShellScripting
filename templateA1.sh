@@ -354,8 +354,12 @@ else
         echo "File not Found"
 fi
 
+########################
+# 03:34:16 26 - Readonly command
 
-03:34:16 26 - Readonly command
+
+
+
 03:41:34 27 - Signals and Traps
 04:03:08 28 - How to debug a bash script﻿
 
