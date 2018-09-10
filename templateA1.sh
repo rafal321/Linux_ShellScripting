@@ -360,6 +360,15 @@ var=31
 readonly var
 var=50
 echo "var => $var"
+#function also can be readonly
+hello() {
+        echo "Helo Universe"
+}
+readonly -f hello
+hello() {
+        echo "Helo Universe Again"
+}
+
 
 
 
