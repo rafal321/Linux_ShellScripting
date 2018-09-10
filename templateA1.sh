@@ -356,7 +356,10 @@ fi
 
 ########################
 # 03:34:16 26 - Readonly command
-
+var=31
+readonly var
+var=50
+echo "var => $var"
 
 
 
