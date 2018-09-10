@@ -329,10 +329,32 @@ echo "The name is $name : Before"
 print Max
 echo "The name is $name : After"
 
+########################
+# 03:22:09 25 - Function Example
+
+#if file exists or not
+function usage(){
+        echo "You need to provide an argument : "
+        echo "usage : $0 file_name"
+}
+function is_file_there(){
+        local file="$1"
+
+#if file exists it will skip return0 and jump to return1
+#if 1st condition is fale it will jump to return0
+#no if needed in ternary operators!
+        [[ -f "$file" ]] && return 0 || return 1
+}
+# $# - will give us number of arguments
+[[ $# -eq 0 ]] && usage
+
+if ( is_file_there "$1" ); then #$1 arg providet to script
+        echo "File Found"
+else
+        echo "File not Found"
+fi
 
 
-
-03:22:09 25 - Function Example
 03:34:16 26 - Readonly command
 03:41:34 27 - Signals and Traps
 04:03:08 28 - How to debug a bash script﻿
