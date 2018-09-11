@@ -368,11 +368,30 @@ readonly -f hello
 hello() {
         echo "Helo Universe Again"
 }
+#lists read only functions/variables
+readonly -f     readonly -p
+######################################
+# 03:41:34 27 - Signals and Traps
+
+trap "echo Exit signal detected" SIGINT
+#SIGKILL SIGSTOP do not apply
+# $$ pid of current shel scrip
+echo "pid is $$"
+while (( COUNT < 10 )); do
+        sleep 10
+        (( COUNT++ ))
+        echo $COUNT
+done
+exit 0
+#exit script with signal 0 success
+#man 7 signal
+# kill -9 procesID
+
+file=/home/raf/test.file
+trap "rm -f $file && echo File deleted; exit" 0 2 15
 
 
 
-
-03:41:34 27 - Signals and Traps
 04:03:08 28 - How to debug a bash script﻿
 
 
