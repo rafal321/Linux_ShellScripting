@@ -1,5 +1,5 @@
 #!/bin/bash
-# ZZ
+# ZZ - przydalo mi sie w pracy
 #https://www.youtube.com/watch?v=zWVV31NYi1U
 #git: https://www.youtube.com/watch?v=9cMWR-EGFuY&t=274s
 
