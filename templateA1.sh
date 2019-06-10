@@ -1,4 +1,22 @@
 #!/bin/bash
+# ----GIT--------------
+git commit in the file
+
+
+MSG=`cat /mnt/c/AA_git/est2.txt`
+git commit -m "${MSG}"
+
+
+JIRA: 0000
+Description: Commit from web
+
+git commit -m $'JIRA: 0000 \nDescription: xxx'
+
+git reset --hard HEAD~1
+
+return to any previous revision:
+git reset --hard 0ad5a7a6
+# ------------------
 # ZZ - przydalo mi sie w pracy
 # Autobot - do wprowadzenia
 #https://www.youtube.com/watch?v=zWVV31NYi1U
