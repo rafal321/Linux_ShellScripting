@@ -2,10 +2,8 @@
 # ----GIT--------------
 git commit in the file
 
-
 MSG=`cat /mnt/c/AA_git/est2.txt`
 git commit -m "${MSG}"
-
 
 JIRA: 0000
 Description: Commit from web
