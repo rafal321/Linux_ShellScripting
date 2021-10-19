@@ -1,5 +1,6 @@
 #!/bin/bash
 # ----GIT--------------
+#git test
 git commit in the file
 
 MSG=`cat /mnt/c/AA_git/est2.txt`
